@@ -1,0 +1,28 @@
+.<div class="container">
+    <form [formGroup]="productFrom" (ngSubmit)="postData()">
+     <div class="row">
+         <div class="col-lg-6">
+             <label for="">Product Name</label>
+             <input type="text" formControlName="productName" class="form-control">
+         </div>
+         <div class="col-lg-6">
+             <label for="">Product ID</label>
+             <input type="text" formControlName="productId" class="form-control">
+         </div>
+         <div class="col-lg-6">
+             <label for="">Product Type</label>
+             <select formControlName="productType" class="form-control">
+                 <option>Digital</option>
+                 <option>Automated</option>
+             </select>
+         </div>
+         <div class="col-lg-6">
+            <label for="">Product MRP</label>
+            <input type="text" formControlName="productMrp" class="form-control">
+        </div>
+         <div class="col-lg-6 mt-2">
+             <input type="submit" class="btn btn-primary"/>
+         </div>
+     </div>
+    </form>
+ </div>
