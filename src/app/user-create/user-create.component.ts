@@ -27,6 +27,7 @@ export class UserCreateComponent implements OnInit {
     //console.log(this.userFrom.value)
     this.http.post('https://627a890273bad506858b09ff.mockapi.io/api/State',this.userFrom.value).subscribe((data) => {
       alert('Data posted successfully');
+      window.location.reload();
     })
 
   }

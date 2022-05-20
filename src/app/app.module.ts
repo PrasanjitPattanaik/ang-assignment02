@@ -15,6 +15,7 @@ import { UserCreateComponent } from './user-create/user-create.component';
 import { ReactiveFormsModule } from '@angular/forms';
 import { ProductCreateComponent } from './product-create/product-create.component';
 import { HttpClientModule } from '@angular/common/http';
+import { UserEditComponent } from './user-edit/user-edit.component';
 
 @NgModule({
   declarations: [
@@ -28,7 +29,8 @@ import { HttpClientModule } from '@angular/common/http';
     UserViewComponent,
     ProductViewComponent,
     UserCreateComponent,
-    ProductCreateComponent
+    ProductCreateComponent,
+    UserEditComponent
   ],
   imports: [
     BrowserModule,

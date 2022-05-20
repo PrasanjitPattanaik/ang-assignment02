@@ -4,6 +4,7 @@ import { DashboardComponent } from './dashboard/dashboard.component';
 import { ProductCreateComponent } from './product-create/product-create.component';
 import { ProductsComponent } from './products/products.component';
 import { UserCreateComponent } from './user-create/user-create.component';
+import { UserEditComponent } from './user-edit/user-edit.component';
 import { UserViewComponent } from './user-view/user-view.component';
 import { UsersComponent } from './users/users.component';
 
@@ -35,6 +36,10 @@ const routes: Routes = [
   {
     path : "products/:id",
     component : UserViewComponent
+  },
+  {
+    path : "user-edit/:id",
+    component : UserEditComponent
   }
 ];
 

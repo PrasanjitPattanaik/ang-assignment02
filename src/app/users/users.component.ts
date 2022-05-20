@@ -17,4 +17,10 @@ export class UsersComponent implements OnInit {
   ngOnInit(): void {
   }
 
+  deleteUser(id:any){
+    this.http.delete('https://627a890273bad506858b09ff.mockapi.io/api/State/'+id).subscribe((data) => {
+      alert('User deleted successfully');
+    })
+  }
+
 }

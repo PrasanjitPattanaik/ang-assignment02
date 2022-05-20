@@ -21,10 +21,10 @@
             <th>Name</th>
             <th>Position</th>
             <th>Office</th>
-            <th>Age</th>
-            <th>Start date</th>
-            <th>Salary</th>
+            <th>Country</th>
             <th>Action</th>
+            <th>Edit</th>
+            <th>Delete</th>
           </tr>
         </thead>
         <tbody>
@@ -44,11 +44,17 @@
             <td>{{user.email}}</td>
             <td>{{user.state}}</td> 
             <td>{{user.country}}</td>
-            <td>2011/07/25</td>
-            <td>$170,750</td>
             <td>
                 <a [routerLink]="['/user',user.id]" class="btn btn-sm btn-primary">View</a>
             </td>
+            <td>
+                <a [routerLink]="['/user-edit',user.id]" class="bi bi-pencil">Edit</a>
+            </td>
+            <td>
+                <!-- <a [routerLink]="['/user-delete',user.id]" class="btn btn-sm btn-primary">Delete</a> -->
+                <a (click)="deleteUser(user.id)" class="btn btn-sm btn-primary">Delete</a>
+            </td>
+
           </tr>
         </tbody>
       </table>
